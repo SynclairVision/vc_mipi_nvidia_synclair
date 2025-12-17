@@ -1,0 +1,4 @@
+gen_ekb - Generates the following (+ a lot of unused stuff):
+eks_t234.img - Encrypted KeyBlob (EKB) binary, replaces the standard eks.img so that the jetson boots with our custom disk encryption key.
+sym2_t234.key - Disk encryption key, our custom disk encryption key
+PASS.TXT - the passphrase generated that is used to unlock the encrypted disk partitions
