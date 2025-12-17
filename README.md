@@ -1,3 +1,25 @@
+# Synclair Specific
+First time run (when build doesn't exist):
+cd bin
+./setup.sh --host
+./build.sh --all
+./synclair_flash.sh
+
+Other runs (when build already exists):
+cd bin
+./synclair_flash.sh
+
+For disk encryption:
+./synclair_flash.sh -e [ABSOLUTE PATH]
+
+For WIFI driver support:
+./synclair_flash.sh -w
+When building the kernel it will open a menu, make sure that "Intel Wireless WiFi Next Gen ALX/iwlwifi driver support" and 
+"Intel Wireless WiFi MVM Firmware support" are activated before exiting, they can be found under "Device Drivers → Network device support → Wireless LAN.".
+
+---
+
+
 # Vision Components MIPI CSI-2 driver for NVIDIA Jetson Nano, Xavier NX, AGX Xavier, TX2, Orin Nano and Orin NX
 
 ![VC MIPI camera](doc/images/mipi_sensor_front_back.png)
