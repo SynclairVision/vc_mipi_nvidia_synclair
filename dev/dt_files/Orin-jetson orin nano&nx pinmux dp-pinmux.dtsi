@@ -32,7 +32,7 @@
 /dts-v1/;
 #include "pinctrl-tegra.h"
 
-#include "./Orin-jetson orin nano&nx pinmux dp-gpio-default.dtsi"
+#include "./tegra234-mb1-bct-gpio-p3767-dp-a03.dtsi"
 / {
 	pinmux@2430000 {
 		pinctrl-names = "default", "drive", "unused";
